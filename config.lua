@@ -21,7 +21,7 @@ Config.IllegalActions = {
         label = "麻薬の運び屋",
     },
     ["drugselling"] = {
-        minimumPolice = 4,
+        minimumPolice = 7,
         busy = false,
         label = "麻薬の手売り"
     },
