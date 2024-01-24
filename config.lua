@@ -16,12 +16,12 @@ Config.IllegalActions = {
         label = "空き巣"
     },
     ["drugdeliveries"] = {
-        minimumPolice = 10,
+        minimumPolice = 4,
         busy = false,
         label = "麻薬の運び屋",
     },
     ["drugselling"] = {
-        minimumPolice = 10,
+        minimumPolice = 4,
         busy = false,
         label = "麻薬の手売り"
     },
@@ -30,7 +30,7 @@ Config.IllegalActions = {
         busy = false,
         label = "コンビニ強盗"
     },
-    ["jewelery"] = {
+    ["jewellery"] = {
         minimumPolice = 6,
         busy = false,
         label = "宝石強盗"
