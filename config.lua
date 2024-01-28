@@ -16,7 +16,7 @@ Config.IllegalActions = {
         label = "空き巣"
     },
     ["drugdeliveries"] = {
-        minimumPolice = 4,
+        minimumPolice = 7,
         busy = false,
         label = "麻薬の運び屋",
     },
