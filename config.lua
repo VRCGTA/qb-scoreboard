@@ -10,36 +10,56 @@ Config.MaxPlayers = GetConvarInt('sv_maxclients', 64) -- It returns 48 if it can
 
 -- Minimum Police for Actions
 Config.IllegalActions = {
-    ["houcerobbery"] = {
-        minimumPolice = 3,
+    ["houserobbery"] = {
+        minimumPolice = exports['vrcgta-qb']:GetValue('HousePoliceOnDutyRequired'),
         busy = false,
         label = "空き巣"
     },
-    ["drugdeliveries"] = {
-        minimumPolice = 7,
-        busy = false,
-        label = "麻薬の運び屋",
-    },
-    ["drugselling"] = {
-        minimumPolice = 7,
-        busy = false,
-        label = "麻薬の手売り"
-    },
+    -- ["drugdeliveries"] = {
+    --     minimumPolice = 7,
+    --     busy = false,
+    --     label = "麻薬の運び屋",
+    -- },
+    -- ["drugselling"] = {
+    --     minimumPolice = 7,
+    --     busy = false,
+    --     label = "麻薬の手売り"
+    -- },
     ["storerobbery"] = {
-        minimumPolice = 5,
+        minimumPolice = exports['vrcgta-qb']:GetValue('MinimumStoreRobberyPolice'),
         busy = false,
         label = "コンビニ強盗"
     },
     ["jewellery"] = {
-        minimumPolice = 6,
+        minimumPolice = exports['vrcgta-qb']:GetValue('JewelleryRequiredCops'),
         busy = false,
-        label = "宝石強盗"
+        label = "宝石店強盗"
     },
-    ["bank"] = {
-        minimumPolice = 8,
+    ["bankrobbery"] = {
+        minimumPolice = exports['vrcgta-qb']:GetValue('MinimumFleecaPolice'),
         busy = false,
-        label = "銀行強盗"
-    }
+        label = "フリーカ強盗"
+    },
+    ["pacific"] = {
+        minimumPolice = exports['vrcgta-qb']:GetValue('MinimumPacificPolice'),
+        busy = false,
+        label = "パシフィック強盗"
+    },
+    ["paleto"] = {
+        minimumPolice = exports['vrcgta-qb']:GetValue('MinimumPaletoPolice'),
+        busy = false,
+        label = "パレト強盗"
+    },
+    ["smugglers"] = {
+        minimumPolice = exports['vrcgta-qb']:GetValue('SmugglersMinimumPoliceOnline'),
+        busy = false,
+        label = "飛行機強襲"
+    },
+    ["boosting"] = {
+        minimumPolice = exports['vrcgta-qb']:GetValue('BoostingRequiredPoliceAmount'),
+        busy = false,
+        label = "車両窃盗"
+    },
 }
 
 -- Show ID's for all players or Opted in Staff
