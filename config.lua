@@ -55,8 +55,13 @@ Config.IllegalActions = {
         busy = false,
         label = "飛行機強襲"
     },
-    ["boosting"] = {
+    ["boosting_high"] = {
         minimumPolice = exports['vrcgta-qb']:GetValue('BoostingRequiredPoliceAmount'),
+        busy = false,
+        label = "車両窃盗(B以上)"
+    },
+    ["boosting_low"] = {
+        minimumPolice = exports['vrcgta-qb']:GetValue('BoostingLowRequiredPoliceAmount'),
         busy = false,
         label = "車両窃盗"
     },
