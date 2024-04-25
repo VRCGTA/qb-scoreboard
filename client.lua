@@ -55,7 +55,7 @@ end
 -- Events
 
 RegisterNetEvent('qb-scoreboard:client:SetActivityBusy', function(activity, busy)
-    Config.IllegalActions[activity].busy = busy
+    GetIllegalActions()[activity].busy = busy
 end)
 
 -- Command
@@ -70,7 +70,7 @@ if Config.Toggle then
                     action = "open",
                     players = players,
                     maxPlayers = Config.MaxPlayers,
-                    requiredCops = Config.IllegalActions,
+                    requiredCops = GetIllegalActions(),
                     currentCops = cops
                 })
 
@@ -96,7 +96,7 @@ else
                 action = "open",
                 players = players,
                 maxPlayers = Config.MaxPlayers,
-                requiredCops = Config.IllegalActions,
+                requiredCops = GetIllegalActions(),
                 currentCops = cops
             })
 
@@ -121,7 +121,7 @@ end
 CreateThread(function()
     Wait(1000)
     local actions = {}
-    for k, v in pairs(Config.IllegalActions) do
+    for k, v in pairs(GetIllegalActions()) do
         actions[k] = v.label
     end
     SendNUIMessage({
