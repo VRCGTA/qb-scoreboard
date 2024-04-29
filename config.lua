@@ -55,7 +55,7 @@ function GetIllegalActions()
         ["smugglers"] = {
             minimumPolice = GetConvarInt("vrcgta:smugglers:smugglersMinimumPoliceOnline", 999),
             busy = Config.BusyIllegalActionStates["smugglers"] or false,
-            label = "飛行機強襲"
+            label = "密輸機強盗"
         },
         ["boosting_high"] = {
             minimumPolice = GetConvarInt("vrcgta:boosting:boostingRequiredPoliceAmount", 999),
