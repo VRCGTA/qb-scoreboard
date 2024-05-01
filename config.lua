@@ -60,7 +60,7 @@ function GetIllegalActions()
         ["boosting_high"] = {
             minimumPolice = GetConvarInt("vrcgta:boosting:boostingRequiredPoliceAmount", 999),
             busy = Config.BusyIllegalActionStates["boosting_high"] or false,
-            label = "車両窃盗(B以上)"
+            label = "車両窃盗(A以上)"
         },
         ["boosting_low"] = {
             minimumPolice = GetConvarInt("vrcgta:boosting:boostingLowRequiredPoliceAmount", 999),
