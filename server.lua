@@ -21,6 +21,6 @@ QBCore.Functions.CreateCallback('qb-scoreboard:server:GetScoreboardData', functi
 end)
 
 RegisterNetEvent('qb-scoreboard:server:SetActivityBusy', function(activity, bool)
-    Config.BusyIllegalActionStates[activity].busy = bool
+    Config.BusyIllegalActionStates[activity] = bool
     TriggerClientEvent('qb-scoreboard:client:SetActivityBusy', -1, activity, bool)
 end)
